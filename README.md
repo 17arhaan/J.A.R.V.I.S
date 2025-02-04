@@ -15,6 +15,76 @@
 - **AI-powered Automation:** Provides coding assistance, debugging, and deployment guidance.
 - **Context Retention:** Maintains past decisions and project-specific configurations.
 
+## Directory
+
+J.A.R.V.I.S/
+│── backend/
+│   │── api/
+│   │   │── routes/
+│   │   │   │── nlp.py
+│   │   │   │── vision.py
+│   │   │   │── automation.py
+│   │   │   │── authentication.py
+│   │   │── services/
+│   │   │   │── nlp_engine.py
+│   │   │   │── vision_module.py
+│   │   │   │── task_automation.py
+│   │   │   │── voice_module.py
+│   │── core/
+│   │   │── config.py
+│   │   │── database.py
+│   │   │── message_queue.py
+│   │── models/
+│   │   │── transformers/
+│   │   │── yolo/
+│   │   │── tts_asr/
+│   │── utils/
+│   │   │── logging.py
+│   │   │── helpers.py
+│   │── app.py
+│
+│── frontend/
+│   │── web/
+│   │   │── src/
+│   │   │   │── components/
+│   │   │   │── pages/
+│   │   │   │── assets/
+│   │   │   │── App.js
+│   │   │   │── index.js
+│   │   │── public/
+│   │── mobile/
+│   │   │── android/
+│   │   │── ios/
+│
+│── data/
+│   │── datasets/
+│   │   │── images/
+│   │   │── text/
+│   │── models/
+│   │   │── trained_nlp/
+│   │   │── trained_cv/
+│
+│── docs/
+│   │── architecture.md
+│   │── api_reference.md
+│   │── user_manual.md
+│
+│── tests/
+│   │── unit/
+│   │── integration/
+│   │── performance/
+│
+│── scripts/
+│   │── setup.sh
+│   │── deploy.sh
+│
+│── .env
+│── .gitignore
+│── README.md
+│── requirements.txt
+│── Dockerfile
+
+
 ## Installation
 ### Prerequisites
 Ensure you have the following installed:
