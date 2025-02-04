@@ -16,7 +16,7 @@
 - **Context Retention:** Maintains past decisions and project-specific configurations.
 
 ## Directory
-
+ ```
 J.A.R.V.I.S/
 │── backend/
 │   │── api/
@@ -83,7 +83,7 @@ J.A.R.V.I.S/
 │── README.md
 │── requirements.txt
 │── Dockerfile
-
+ ```
 
 ## Installation
 ### Prerequisites
