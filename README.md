@@ -6,7 +6,7 @@
 </div>
 
 ## Overview
-( J.A.R.V.I.S ) Just A Reality Versatile Interactive  is an AI-powered assistant integrating NLP, computer vision, and speech processing capabilities. It provides both high-level insights and technical solutions for coding, configuration, and deployment. The system utilizes state-of-the-art AI models, such as YOLOv8 for object detection and advanced NLP frameworks for natural language understanding.
+( J.A.R.V.I.S ) Just A Reality Versatile Interactive System is an AI-powered assistant integrating NLP, computer vision, and speech processing capabilities. It provides both high-level insights and technical solutions for coding, configuration, and deployment. The system utilizes state-of-the-art AI models, such as YOLOv8 for object detection and advanced NLP frameworks for natural language understanding.
 
 ## Features
 - **Natural Language Processing (NLP):** Advanced text understanding and generation capabilities.
