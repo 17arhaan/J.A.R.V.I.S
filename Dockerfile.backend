@@ -1,0 +1,36 @@
+# Use Node.js 18 with full Debian for TensorFlow.js compatibility
+FROM node:18
+
+# Install system dependencies for TensorFlow.js
+RUN apt-get update && apt-get install -y \
+    python3 \
+    make \
+    g++ \
+    wget \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies (including dev dependencies for @tensorflow/tfjs-node)
+RUN npm ci
+
+# Copy server files
+COPY server/ ./server/
+COPY .env* ./
+
+# Create uploads directory
+RUN mkdir -p uploads
+
+# Expose the port
+EXPOSE 3001
+
+# Set environment variables
+ENV NODE_ENV=production
+
+# Start the server with Docker-compatible version
+CMD ["node", "server/index-docker.js"] 

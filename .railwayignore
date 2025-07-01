@@ -1,0 +1,55 @@
+# Railway ignore file for J.A.R.V.I.S
+
+# Development files
+node_modules/
+.git/
+.gitignore
+.env.local
+.env.development
+.env.test
+
+# Build artifacts (will be built on Railway)
+dist/
+build/
+
+# Documentation
+README.md
+SETUP.md
+RAILWAY-DEPLOYMENT.md
+
+# Local Docker files (using Railway optimized ones)
+docker-compose*.yml
+Dockerfile.frontend
+Dockerfile.backend
+nginx.conf
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test files
+test-*.png
+test-*.jpg
+real-test-image.*
+
+# Coverage and test reports
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+
+# Local uploads (will be handled by Railway)
+uploads/ 
