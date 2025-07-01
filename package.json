@@ -3,12 +3,16 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "J.A.R.V.I.S - Just a Reality Versatile System by Arhaan",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "node server/index.js"
+    "server": "node server/index.js",
+    "railway:build": "npm run build",
+    "railway:start": "node server/index-docker.js",
+    "deploy:railway": "./scripts/deploy-railway.sh"
   },
   "dependencies": {
     "@tensorflow-models/coco-ssd": "^2.2.3",
@@ -45,5 +49,23 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/jarvis-reality-system.git"
+  },
+  "keywords": [
+    "jarvis",
+    "reality-system",
+    "speech-recognition",
+    "computer-vision",
+    "multi-modal",
+    "railway"
+  ],
+  "author": "Arhaan (https://www.arhaanportfolio.in)",
+  "license": "MIT"
 }
